@@ -14,9 +14,9 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const response = await axios.get(apiUrl);
         const data = response.data;
 
-        await conn.sendMessage(from, { image: { url: data.message }, caption: '> *© Powered By KHANX-AI> ' }, { quoted: mek });
+        await conn.sendMessage(from, { image: { url: data.message }, caption: '> *Blud MD> ' }, { quoted: mek });
     } catch (e) {
         console.log(e); // ❯❯ Powered by KHAN-MD 👑
-        reply(`єяяσя ƒєт¢нιηg ∂σg ιмαgє: ${e.message}`);
+        reply(`error: ${e.message}`);
     }
 });
