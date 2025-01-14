@@ -10,7 +10,7 @@ const axios = require('axios');
                          },
                          async (conn, mek, m, { from, q, reply }) => {
                              try {
-                                 if (!q) return reply("❗ Please provide a word to define. Usage: .define [word]");
+                                 if (!q) return reply("❗ Please provide a word to define. Try: .define <word>");
 
                                  const word = q;
                                  const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
@@ -26,9 +26,9 @@ const wordInfo = `
 📚 *Word*: ${definitionData.word}
 🔍 *Definition*: ${definition}
 📝 *Example*: ${example}
-🔗 *Synonyms*: ${synonyms}
+🧹 *Synonyms*: ${synonyms}
 
-> *@ Powered By Jawad Tech X*`;
+> *Blud MD*`;
 
                                  return reply(wordInfo);
                              } catch (e) {
