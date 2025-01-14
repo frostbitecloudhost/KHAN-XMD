@@ -8,7 +8,7 @@ cmd({
     filename: __filename
 },
 async (conn, mek, m, { from, isOwner, quoted, reply }) => {
-    if (!isOwner) return reply("❌ You are not the owner!");
+    if (!isOwner) return reply("*❌ You are not the developer or owner of this bot!*");
     if (!quoted) return reply("❌ Please reply to the user you want to block.");
 
     const user = quoted.sender;
