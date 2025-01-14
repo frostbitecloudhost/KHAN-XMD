@@ -31,7 +31,7 @@ async (conn, mek, m, {
     // give credit and use
     const imageMessage = {
       image: { url: screenshotUrl },
-      caption: "*WEB SS DOWNLOADER*\n\n> *© Powered By JawadTechX*",
+      caption: "*WEB SS DOWNLOADER*\n\n> *BLUDOS*",
       contextInfo: {
         mentionedJid: [m.sender],
         forwardingScore: 999,
