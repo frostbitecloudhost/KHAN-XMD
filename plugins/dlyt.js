@@ -46,7 +46,7 @@ async (conn, mek, m, { from, prefix, quoted, q, reply, waitForReply }) => {
         await conn.sendMessage(from, {
             video: { url: ytdl.download.url },
             mimetype: "video/mp4",
-            caption: `> *${yts.title}*\n> *Quality: ${quality}*\n> *© Pᴏᴡᴇʀᴇᴅ Bʏ KʜᴀɴX-Aɪ ♡*`
+            caption: `> *${yts.title}*\n> *Quality: ${quality}*\n> *Blud MD*`
         }, { quoted: mek });
     } catch (e) {
         console.log(e);
@@ -88,7 +88,7 @@ let ytmsg = `╭━━━〔 *KHAN-MD* 〕━━━┈⊷
 ┇๏ *Author* -  ${yts.author.name} 
 ┇๏ *Link* -  ${yts.url}
 ╰━━❑━⪼
-> *© Pᴏᴡᴇʀᴇᴅ Bʏ KʜᴀɴX-Aɪ ♡*`
+> *Blud MD*`
 // SEND DETAILS
 await conn.sendMessage(from, { image: { url: yts.thumbnail || yts.image || '' }, caption: `${ytmsg}`}, { quoted: mek });
 
