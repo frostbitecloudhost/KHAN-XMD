@@ -6,12 +6,12 @@ cmd({
     alias: ["listcmd","commands"],
     desc: "menu the bot",
     category: "menu",
-    react: "⚡",
+    react: "💭",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━❮ *DOWNLOAD CMD* ❯━┈⊷
+        let dec = `╭━❮ *♱ DOWNLOAD CMD ♱* ❯━┈⊷
 ┃▸
 ┃▸📄 COMMAND: .play
 ┃▸❕ Download Audio from yt
@@ -59,7 +59,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃▸❕ Download mediafire files
 ╰━━━━━━━━━━━━⪼ 
 
-╭━❮ *ANMIE CMD* ❯━┈⊷
+╭━❮ *♱ ANMIE CMD ♱* ❯━┈⊷
 ┃▸
 ┃▸📄 COMMAND: .yts
 ┃▸❕ Serch videos from yt
@@ -80,7 +80,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃▸❕ get romantic anime pics
 ╰━━━━━━━━━━━━⪼  
 
-╭━❮‍ *INFO CMD* ❯━┈⊷
+╭━❮‍ *♱ INFO CMD ♱* ❯━┈⊷
 ┃▸
 ┃▸📄 COMMAND: .alive
 ┃▸❕ Check online or not
@@ -116,7 +116,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃▸❕ get bot repository 
 ╰━━━━━━━━━━━━⪼
 
-╭━❮ *OTHER CMD* ❯━┈⊷
+╭━❮ *♱ OTHER CMD ♱* ❯━┈⊷
 ┃▸
 ┃▸📄 COMMAND: .joke 
 ┃▸❕ Get Rendom joke 
@@ -140,7 +140,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃▸❕ serch any words
 ╰━━━━━━━━━━━━⪼
 
-╭━❮ *GROUP CMD* ❯━┈⊷
+╭━❮ *♱ GROUP CMD ♱* ❯━┈⊷
 ┃▸
 ┃▸📄 COMMAND: .mute
 ┃▸❕ Mute group
@@ -236,7 +236,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃▸❕ set time to disappear sms
 ╰━━━━━━━━━━━━⪼
 
-╭━❮ *OWNER CMD* ❯━┈⊷
+╭━❮ *♱ OWNER CMD ♱* ❯━┈⊷
 ┃▸
 ┃▸📄 COMMAND: .update
 ┃▸❕ update bot velue 
@@ -281,7 +281,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃▸❕ get group jid
 ╰━━━━━━━━━━━━⪼
 
-╭━❮ *CONVERT CMD* ❯━┈⊷
+╭━❮ *♱ CONVERT CMD ♱* ❯━┈⊷
 ┃▸
 ┃▸📄 COMMAND: .sticker
 ┃▸❕ convert photo to sticker
@@ -297,7 +297,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/89xq3r.jpg` },
+                image: { url: `https://files.catbox.moe/z6z4ms.jpeg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
@@ -315,7 +315,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/JawadYTX/KHAN-DATA/raw/refs/heads/main/autovoice/sigma.m4a' },
+            audio: { url: 'https://github.com/frostbitecloudhost/files/blob/main/sounds/armymov%20(slowed).mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
