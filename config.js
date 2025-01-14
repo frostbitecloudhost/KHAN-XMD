@@ -19,7 +19,7 @@ BOT_NAME: process.env.BOT_NAME || "BLUDOS",
 // add bot namw here for menu
 STICKER_NAME: process.env.STICKER_NAME || "BLUDOS",
 // type sticker pack name 
-CUSTOM_REACT: process.env.CUSTOM_REACT || "true",
+CUSTOM_REACT: process.env.CUSTOM_REACT || "false",
 // make this true for custum emoji react    
 CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍",
 // chose custom react emojis by yourself 
@@ -31,9 +31,9 @@ OWNER_NAME: process.env.OWNER_NAME || "bludos",
 // add bot owner name
 DESCRIPTION: process.env.DESCRIPTION || "*bludos_dev*",
 // add bot owner name    
-ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/149k8x.jpg",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/vxxfb4.jpg",
 // add img for alive msg
-LIVE_MSG: process.env.LIVE_MSG || "> Zinda Hu Nigger 💀",
+LIVE_MSG: process.env.LIVE_MSG || "> 💀",
 // add alive msg here 
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
 // Turn true or false for automatic read msgs
