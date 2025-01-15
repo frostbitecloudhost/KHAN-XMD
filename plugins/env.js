@@ -19,12 +19,12 @@ cmd({
 async (conn, mek, m, { from, quoted, reply }) => {
     try {
         // Define the settings message with the correct boolean checks
-        let envSettings = `╭━━━〔 *♱ BLUD MD ♱* 〕━━━┈⊷
+        let envSettings = `╭━━━〔 *☩ 𝐁𝐥𝐮𝐝𝐌𝐝 ☩* 〕━━━┈⊷
 ┃▸╭───────────
-┃▸┃๏ *ENV SETTINGS*
+┃▸┃๏ *𝐄𝐧𝐯 𝐒𝐞𝐭𝐭𝐢𝐧𝐠𝐬*
 ┃▸└───────────···๏
 ╰────────────────┈⊷
-╭━━〔 *Enabled Disabled* 〕━━┈⊷
+╭━━〔 *𝐄𝐧𝐚𝐛𝐥𝐞𝐝 & 𝐃𝐢𝐬𝐚𝐛𝐥𝐞𝐝* 〕━━┈⊷
 ┇๏ *Auto Read Status:* ${isEnabled(config.AUTO_STATUS_SEEN) ? "Enabled ✅" : "Disabled ❌"}
 ┇๏ *Auto Reply Status:* ${isEnabled(config.AUTO_STATUS_REPLY) ? "Enabled ✅" : "Disabled ❌"}
 ┇๏ *Auto Reply:* ${isEnabled(config.AUTO_REPLY) ? "Enabled ✅" : "Disabled ❌"}
@@ -52,10 +52,10 @@ async (conn, mek, m, { from, quoted, reply }) => {
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
-                    isForwarded: true,
+                    isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363354023106228@newsletter',
-                        newsletterName: "Bludos",
+                        newsletterJid: 'd',
+                        newsletterName: "x",
                         serverMessageId: 143
                     }
                 }
@@ -66,7 +66,7 @@ async (conn, mek, m, { from, quoted, reply }) => {
         // Send an audio file
         await conn.sendMessage(from, {
             audio: { url: 'https://github.com/frostbitecloudhost/files/blob/main/sounds/armymov%20(slowed).mp3' }, // Audio URL
-            mimetype: 'audio/mp4',
+            mimetype: 'audio/mp3',
             ptt: true
         }, { quoted: mek });
 
