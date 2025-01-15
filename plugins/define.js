@@ -23,12 +23,12 @@ const axios = require('axios');
                                  const synonyms = definitionData.meanings[0].definitions[0].synonyms.join(', ') || 'No synonyms available';
 
 const wordInfo = `
-*Word*: ${definitionData.word}
-*Definition*: ${definition}
-*Example*: ${example}
-*Synonyms*: ${synonyms}
+*𝗪𝗼𝗿𝗱*: ${definitionData.word}
+*𝗗𝗲𝗳𝗶𝗻𝗶𝘁𝗶𝗼𝗻*: ${definition}
+*𝗘𝘅𝗮𝗺𝗽𝗹𝗲*: ${example}
+*𝗦𝘆𝗻𝗼𝗻𝘆𝗺𝘀*: ${synonyms}
 
-> *Blud MD*`;
+> *☩ 𝐁𝐥𝐮𝐝𝐌𝐝*`;
 
                                  return reply(wordInfo);
                              } catch (e) {
