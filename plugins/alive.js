@@ -13,16 +13,16 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         // Generate system status message
-        const status = ` IM ALIVE
-┃◈╭─────────────·๏
+        const status = ` ☩☩☩☩☩ IM ALIVE ☩☩☩☩☩☩
+┃◈╭─────────────·☩
 ┃◈┃• *Uptime*:  ${runtime(process.uptime())} 
 ┃◈┃• *Ram usage*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
 ┃◈┃• *HostName*: ${os.hostname()}
 ┃◈┃• *Owner*: bludos_dev
 ┃◈┃• *Version*: 1.0Beta
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-> BludMD™`;
+┃◈└───────────┈☩
+
+> ☩ BludMD™`;
 
         // Send the status message with an image
         await conn.sendMessage(from, { 
