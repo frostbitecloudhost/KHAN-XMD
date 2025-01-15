@@ -23,10 +23,10 @@ const axios = require('axios');
                                  const synonyms = definitionData.meanings[0].definitions[0].synonyms.join(', ') || 'No synonyms available';
 
 const wordInfo = `
-📚 *Word*: ${definitionData.word}
-🔍 *Definition*: ${definition}
-📝 *Example*: ${example}
-🧹 *Synonyms*: ${synonyms}
+*Word*: ${definitionData.word}
+*Definition*: ${definition}
+*Example*: ${example}
+*Synonyms*: ${synonyms}
 
 > *Blud MD*`;
 
@@ -34,8 +34,8 @@ const wordInfo = `
                              } catch (e) {
                                  console.log(e);
                                  if (e.response && e.response.status === 404) {
-                                     return reply("🚫 Word not found. Please check the spelling and try again.");
+                                     return reply("Word not found. Please check the spelling and try again.");
                                  }
-                                 return reply("⚠️ An error occurred while fetching the definition. Please try again later.");
+                                 return reply("An error occurred while fetching the definition. Please try again later.");
                              }
                          });
