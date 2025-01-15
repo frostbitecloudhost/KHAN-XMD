@@ -13,28 +13,28 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         // Generate system status message
-        const status = `♱♱♱♱♱ CHRIST IS KING ♱♱♱♱♱
+        const status = ` IM ALIVE
 ┃◈╭─────────────·๏
-┃◈┃• *⏳Uptime*:  ${runtime(process.uptime())} 
-┃◈┃• *📟 Ram usage*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
-┃◈┃• *⚙️ HostName*: ${os.hostname()}
-┃◈┃• *👨‍💻 Owner*: bludos_dev
-┃◈┃• *🧬 Version*: 1.0Beta
+┃◈┃• *Uptime*:  ${runtime(process.uptime())} 
+┃◈┃• *Ram usage*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
+┃◈┃• *HostName*: ${os.hostname()}
+┃◈┃• *Owner*: bludos_dev
+┃◈┃• *Version*: 1.0Beta
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 > BludMD™`;
 
         // Send the status message with an image
         await conn.sendMessage(from, { 
-            image: { url: `https://files.catbox.moe/froc05.jpg` },  // Image URL
+            image: { url: `https://files.catbox.moe/ujer8v.jpeg` },  // Image URL
             caption: status,
             contextInfo: {
                 mentionedJid: [m.sender],
                 forwardingScore: 999,
-                isForwarded: true,
+                isForwarded: false,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363354023106228@newsletter',
-                    newsletterName: 'Bludos',
+                    newsletterJid: 's',
+                    newsletterName: 'x',
                     serverMessageId: 143
                 }
             }
