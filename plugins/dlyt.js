@@ -15,42 +15,42 @@ cmd({
 },
 async (conn, mek, m, { from, prefix, quoted, q, reply, waitForReply }) => {
     try {
-        if (!q) return await reply("Please provide a YouTube URL or Name");
+        if (!q) return await reply("𝚃𝚛𝚢 𝚊𝚐𝚊𝚒𝚗 𝚠𝚒𝚝𝚑 𝚢𝚘𝚞𝚝𝚞𝚋𝚎 𝚟𝚒𝚍𝚎𝚘 𝚕𝚒𝚗𝚔 𝚘𝚛 𝚝𝚒𝚝𝚕𝚎");
 
         const yt = await ytsearch(q);
         if (yt.results.length < 1) return reply("No results found!");
 
         let yts = yt.results[0];
 
-        let ytmsg = `╭━━━〔 *KHAN-MD* 〕━━━┈⊷
+        let ytmsg = `╭━━━〔 *☩ 𝐁𝐥𝐮𝐝𝐌𝐝 ☩* 〕━━━┈⊷
 ┃▸╭───────────
-┃▸┃๏ *VIDEO DOWNLOADER*
+┃▸┃๏ *𝐕𝐢𝐝𝐞𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫*
 ┃▸└───────────···๏
 ╰────────────────┈⊷
 ╭━━❐━⪼
-┇๏ *Title* -  ${yts.title}
-┇๏ *Duration* - ${yts.timestamp}
-┇๏ *Views* -  ${yts.views}
-┇๏ *Author* -  ${yts.author.name}
-┇๏ *Link* -  ${yts.url}
+┇๏ *𝗧𝗶𝘁𝗹𝗲* -  ${yts.title}
+┇๏ *𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻* - ${yts.timestamp}
+┇๏ *𝗩𝗶𝗲𝘄𝘀* -  ${yts.views}
+┇๏ *𝗖𝗿𝗲𝗮𝘁𝗼𝗿* -  ${yts.author.name}
+┇๏ *𝗟𝗶𝗻𝗸* -  ${yts.url}
 ╰━━❑━⪼`;
 
         // Send video details
         await conn.sendMessage(from, { image: { url: yts.thumbnail || yts.image || '' }, caption: `${ytmsg}` }, { quoted: mek });
 
-        let quality = "360p"; // Directly set quality to 360p
+        let quality = "720p"; // Directly set quality to 360p
         const ytdl = await ytmp4(yts.url, quality);
-        if (!ytdl.download.url) return reply("Failed to get the download link!");
+        if (!ytdl.download.url) return reply("𝙵𝚊𝚒𝚕𝚎𝚍 𝚝𝚘 𝚏𝚎𝚝𝚌𝚑 𝚝𝚑𝚎 𝚕𝚒𝚗𝚔.");
 
         // Send video file
         await conn.sendMessage(from, {
             video: { url: ytdl.download.url },
             mimetype: "video/mp4",
-            caption: `> *${yts.title}*\n> *Quality: ${quality}*\n> *Blud MD*`
+            caption: `> *${yts.title}*\n> *Quality: ${quality}*\n> *☩ 𝐁𝐥𝐮𝐝𝐌𝐝 ☩*`
         }, { quoted: mek });
     } catch (e) {
         console.log(e);
-        reply(e.message || "An error occurred!");
+        reply(e.message || "𝙴𝚛𝚛𝚘𝚛 𝙾𝚌𝚌𝚞𝚛𝚛𝚎𝚍 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗 𝙻𝚊𝚝𝚎𝚛.");
     }
 });
 
@@ -68,27 +68,27 @@ cmd({
 async(conn, mek, m,{ from, prefix, quoted, q, reply }) => {
 try{
 
-if(!q) return await reply("Please give me Yt url or Name")
+if(!q) return await reply("𝚃𝚛𝚢 𝚊𝚐𝚊𝚒𝚗 𝚠𝚒𝚝𝚑 𝚊𝚗 𝚢𝚝 𝚕𝚒𝚗𝚔.")
 	
 const yt = await ytsearch(q);
-if(yt.results.length < 1) return reply("Results is not found !")
+if(yt.results.length < 1) return reply("𝙽𝚘 𝚛𝚎𝚜𝚞𝚕𝚝𝚜 𝚏𝚘𝚞𝚗𝚍!")
 
 let yts = yt.results[0]  
 const ytdl = await ytmp3(yts.url)
 		
-let ytmsg = `╭━━━〔 *KHAN-MD* 〕━━━┈⊷
+let ytmsg = `╭━━━〔 *☩ 𝐁𝐥𝐮𝐝𝐌𝐝 ☩* 〕━━━┈⊷
 ┃▸╭───────────
-┃▸┃๏ *MUSIC DOWNLOADER*
+┃▸┃๏ *𝐌𝐮𝐬𝐢𝐜 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫*
 ┃▸└───────────···๏
 ╰────────────────┈⊷
 ╭━━❐━⪼
-┇๏ *Tital* -  ${yts.title}
-┇๏ *Duration* - ${yts.timestamp}
-┇๏ *Views* -  ${yts.views}
-┇๏ *Author* -  ${yts.author.name} 
-┇๏ *Link* -  ${yts.url}
+┇๏ *𝗧𝗶𝘁𝗹𝗲* -  ${yts.title}
+┇๏ *𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻* - ${yts.timestamp}
+┇๏ *𝗩𝗶𝗲𝘄𝘀* -  ${yts.views}
+┇๏ *𝗖𝗿𝗲𝗮𝘁𝗼𝗿* -  ${yts.author.name} 
+┇๏ *𝗟𝗶𝗻𝗸* -  ${yts.url}
 ╰━━❑━⪼
-> *Blud MD*`
+> *☩ 𝐁𝐥𝐮𝐝𝐌𝐝*`
 // SEND DETAILS
 await conn.sendMessage(from, { image: { url: yts.thumbnail || yts.image || '' }, caption: `${ytmsg}`}, { quoted: mek });
 
@@ -96,7 +96,7 @@ await conn.sendMessage(from, { image: { url: yts.thumbnail || yts.image || '' },
 await conn.sendMessage(from, { audio: { url: ytdl.download.url }, mimetype: "audio/mpeg" }, { quoted: mek })
 
 // SEND DOC TYPE
-await conn.sendMessage(from, { document: { url: ytdl.download.url }, mimetype: "audio/mpeg", fileName: ytdl.result.title + '.mp3', caption: `> *© Pᴏᴡᴇʀᴇᴅ Bʏ KʜᴀɴX-Aɪ ♡*` }, { quoted: mek })
+await conn.sendMessage(from, { document: { url: ytdl.download.url }, mimetype: "audio/mpeg", fileName: ytdl.result.title + '.mp3', caption: `> *☩ 𝐁𝐥𝐮𝐝𝐌𝐝*` }, { quoted: mek })
 
 
 } catch (e) {
